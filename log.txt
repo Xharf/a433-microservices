@@ -1,0 +1,65 @@
+Attaching to a433-microservices_item-app_1, a433-microservices_item-db_1
+[36mitem-app_1  |[0m 
+[36mitem-app_1  |[0m > docker-software-delivery@1.0.0 preinstall /app
+[36mitem-app_1  |[0m > npx npm-force-resolutions
+[36mitem-app_1  |[0m 
+[36mitem-app_1  |[0m npx: installed 6 in 3.135s
+[36mitem-app_1  |[0m audited 662 packages in 14.12s
+[36mitem-app_1  |[0m 
+[36mitem-app_1  |[0m 7 packages are looking for funding
+[36mitem-app_1  |[0m   run `npm fund` for details
+[36mitem-app_1  |[0m 
+[36mitem-app_1  |[0m found 96 vulnerabilities (20 low, 25 moderate, 41 high, 10 critical)
+[36mitem-app_1  |[0m   run `npm audit fix` to fix them, or `npm audit` for details
+[36mitem-app_1  |[0m 
+[36mitem-app_1  |[0m > docker-software-delivery@1.0.0 build /app
+[36mitem-app_1  |[0m > node ./node_modules/gulp/bin/gulp.js
+[36mitem-app_1  |[0m 
+[36mitem-app_1  |[0m [08:29:44] Using gulpfile /app/gulpfile.js
+[36mitem-app_1  |[0m [08:29:44] Starting 'scripts'...
+[36mitem-app_1  |[0m [08:29:47] Finished 'scripts' after 3.15 s
+[36mitem-app_1  |[0m [08:29:47] Starting 'default'...
+[36mitem-app_1  |[0m [08:29:47] Finished 'default' after 15 μs
+[36mitem-app_1  |[0m 
+[36mitem-app_1  |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app_1  |[0m > node ./bin/www
+[36mitem-app_1  |[0m 
+[36mitem-app_1  |[0m NODE_ENV: production
+[36mitem-app_1  |[0m Connected to database
+[36mitem-app_1  |[0m [0mGET / [32m200 [0m147.258 ms - 785[0m
+[36mitem-app_1  |[0m [0mGET /javascripts/dist/dist.min.js [32m200 [0m13.112 ms - 186999[0m
+[36mitem-app_1  |[0m [0mGET /stylesheets/style.css [32m200 [0m18.917 ms - 519[0m
+[36mitem-app_1  |[0m [0mGET /api [32m200 [0m4.661 ms - 2[0m
+[36mitem-app_1  |[0m [0mPOST /api [32m201 [0m48.870 ms - 51[0m
+[36mitem-app_1  |[0m [0mPOST /api [32m201 [0m1.318 ms - 61[0m
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=15fd1c849134
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten] db version v3.6.23
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten] modules: none
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten] build environment:
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I STORAGE  [initandlisten] 
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[33mitem-db_1   |[0m 2023-02-03T08:29:28.915+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7409M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.470+0000 I STORAGE  [initandlisten] WiredTiger message [1675412969:470915][1:0x7f45968e6a40], txn-recover: Main recovery loop: starting at 8/5888
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.530+0000 I STORAGE  [initandlisten] WiredTiger message [1675412969:530308][1:0x7f45968e6a40], txn-recover: Recovering log 8 through 9
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.574+0000 I STORAGE  [initandlisten] WiredTiger message [1675412969:574093][1:0x7f45968e6a40], txn-recover: Recovering log 9 through 9
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.603+0000 I STORAGE  [initandlisten] WiredTiger message [1675412969:603210][1:0x7f45968e6a40], txn-recover: Set global recovery timestamp: 0
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.664+0000 I CONTROL  [initandlisten] 
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.664+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.664+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.664+0000 I CONTROL  [initandlisten] 
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.667+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.668+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.668+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+[33mitem-db_1   |[0m 2023-02-03T08:29:29.668+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[33mitem-db_1   |[0m 2023-02-03T08:29:47.866+0000 I NETWORK  [listener] connection accepted from 172.23.0.3:42474 #1 (1 connection now open)
+[33mitem-db_1   |[0m 2023-02-03T08:29:47.871+0000 I NETWORK  [conn1] received client metadata from 172.23.0.3:42474 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-58-generic" }, platform: "Node.js v14.21.2, LE, mongodb-core: 2.1.20" }
+[33mitem-db_1   |[0m 2023-02-03T08:30:03.202+0000 I STORAGE  [conn1] createCollection: accumulator.documents with generated UUID: eda18156-3b5b-447e-98f1-3cb5d91454ac
