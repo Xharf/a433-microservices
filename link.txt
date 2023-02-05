@@ -1,4 +1,3 @@
 https://github.com/Xharf/a433-microservices/tree/proyek-pertama
 
-https://hub.docker.com/repository/docker/xharf/item-app/tags?page=1&ordering=last_updated
-
+https://hub.docker.com/r/xharf/item-app
