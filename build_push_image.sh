@@ -1,6 +1,4 @@
 #!/bin/bash
-# install docker sapa tau belum ada
-sudo apt-get install docker 
 
 # build image
 docker build -t item-app:v1 .

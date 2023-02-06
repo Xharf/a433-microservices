@@ -7,14 +7,8 @@ services:
     command: sh -c "npm install --production --unsafe-perm && npm run build && npm run start" #command buat jalanin setelah image kebentuk
     ports:
       - 80:8080 # The port the container exposes
-    working_dir: /app # The working directory for commands to run in
     depends_on:
       - item-db # The db service must be running for the app to start
-    volumes: 
-      - ./:/app # Mount the current directory on the host to /app inside the container
-    environment:
-      NODE_ENV: production # Set the environment to production
-      DB_HOST: item-db # The host of the db service
     restart: always # If the container stops, always restart it
   item-db:
     image: mongo:3 # The image to start the container from
